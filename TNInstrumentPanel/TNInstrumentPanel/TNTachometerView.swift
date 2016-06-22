@@ -286,9 +286,7 @@ class TNTachometerView: UIView {
     
     // 旋转角度
     func rotateWithCurrentValue() {
-        if maxValue <= 0.0 || currentValue <= 0.0 {
-            return
-        }
+      
         
         let perValueAngle: CGFloat = CGFloat(startXAxisIncludedAngle * 2 + CGFloat(M_PI)) / maxValue
         
